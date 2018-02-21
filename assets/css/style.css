@@ -1,0 +1,158 @@
+body {
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+      #header {
+        background-color: black;
+        opacity: 40
+        color: white;
+        overflow: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 22px;
+      }
+      #header a:hover {
+        font-weight: 700;
+        color: rgba(158, 0, 93, 1);
+      }
+      a {
+        text-decoration: none;
+        font-family: 'Barlow Condensed', sans-serif;;
+      }
+      .logo {
+        float:left;
+        display: inline-block;
+        margin-right: 25px;
+        padding: 10px;
+      }
+      .leftMenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .leftMenu ul li {
+        display: inline-block;
+        padding: 15px;
+      }
+      .leftMenu {
+        float: left;
+        display: inline-block;
+         align-items: center;
+      }
+      .leftMenu ul li a {
+        color: white;
+         font-weight: 300;
+      }
+
+      .rightMenu {
+        float: right;
+        display: inline-block;
+        color: black;
+      }
+      .rightMenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .rightMenu ul li {
+        display: inline-block;
+        padding: 15px;
+      }
+      .rightMenu ul li a {
+        color: white;
+        font-weight: 300;
+        font-size: 26px;
+      }
+      #largeImage {
+        padding: 200px 25px ;
+        background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left top;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: 0;
+      }
+      .description-box {
+        width: 40%;
+
+      }
+      .description-box h1 {
+        margin: 0;
+        font-family: 'Barlow Condensed', sans-serif;;
+        font-weight: 700;
+        font-size: 60px;
+        color: white;
+      }
+       .description-box h3 {
+         margin: 0;
+          font-family: 'Barlow Condensed', sans-serif;;
+         font-size: 25px;
+         font-weight: 400;
+        color: white;
+      }
+      .description-box h4 {
+        margin: 0;
+         font-family: 'Barlow Condensed', sans-serif;;
+        color: white;
+        font-weight: 100;
+      }
+      .description-box p {
+        font-family: 'Barlow Condensed', sans-serif;;
+        font-weight: 300;
+        margin: 25px 0 25 0;
+        color: white;
+      }
+      #bigRedButton {
+        float: left;
+        background-color: red;
+        border: none;
+        padding: 10px;
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+      .button_example{
+        border:0px solid #df0909; -webkit-border-radius: 0px; -moz-border-radius: 0px;border-radius: 0px;font-size:20px;font-family:'Barlow Condensed', sans-serif;, 'Barlow Condensed', sans-serif;; padding: 18px 18px 18px 18px; text-decoration:none; display:inline-block;font-weight:bold; color: #FFFFFF;
+        background-color: #f62b2b; background-image: -webkit-gradient(linear, left top, left bottom, from(#f62b2b), to(#d20202));
+        background-image: -webkit-linear-gradient(top, #f62b2b, #d20202);
+        background-image: -moz-linear-gradient(top, #f62b2b, #d20202);
+        background-image: -ms-linear-gradient(top, #f62b2b, #d20202);
+        background-image: -o-linear-gradient(top, #f62b2b, #d20202);
+        background-image: linear-gradient(to bottom, #f62b2b, #d20202);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f62b2b, endColorstr=#d20202);
+      }
+
+        .button_example:hover{
+          border:0px solid #b30808;
+          background-color: #e40a0a; background-image: -webkit-gradient(linear, left top, left bottom, from(#e40a0a), to(#9f0202));
+          background-image: -webkit-linear-gradient(top, #e40a0a, #9f0202);
+          background-image: -moz-linear-gradient(top, #e40a0a, #9f0202);
+          background-image: -ms-linear-gradient(top, #e40a0a, #9f0202);
+          background-image: -o-linear-gradient(top, #e40a0a, #9f0202);
+          background-image: linear-gradient(to bottom, #e40a0a, #9f0202);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#e40a0a, endColorstr=#9f0202);
+        }
+        .videoSection {
+          display: flex;
+          flex-direction: row;
+          background-color: black;
+          justify-content: center;
+          flex-wrap: wrap;
+
+
+        }
+        .projectBoxes {
+          background-color: #E37B40;
+          list-style: none;
+          color: white;
+          font-size: 60px;
+          font-family: 'Barlow Condensed', sans-serif;
+          text-align:center;
+          align-content: center;
+          height: 180px;
+          width: 450px;
+          margin: 0;
+          flex-flow: row;
+          flex-wrap: wrap;
+          line-height: 90px;
+
+        }
