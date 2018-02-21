@@ -21,7 +21,7 @@ body {
         font-family: 'Barlow Condensed', sans-serif;;
       }
       .logo {
-        align-content: center;
+        align-items: center;
         display: inline-block;
         margin-right: 25px;
         padding: 10px;
