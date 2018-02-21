@@ -21,7 +21,7 @@
   <div class="videoSection">
 
     <li class="projectBoxes">
-    
+
       <i class="fas fa-camera-retro"></i>Design
     </li>
     <li class="projectBoxes" style="background-color: #46B29D">
@@ -40,6 +40,10 @@
 
 
   </div>
+  <div class="intro">
+    <h1 id="#example2"></h1>
+
+  </div>
   <div id="largeImage">
     <div class="description-box">
       <h4>Featured Project:</h4>
@@ -48,12 +52,24 @@
       <p>Tonysuits needed their stock wingsuits photographed for their website, so we gladly tried them all on, and got all the shots.</p>
 
       <div>
-        <a class="button_example" href="wingsuits.html">Check out the project.</a>
+        <button id="#bigButton"><a href="wingsuits.html">Check out the project.</a></button>
       </div>
     </div>
   </div>
   <script src="index.js"></script>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  new TypeIt('#example2', {
+       strings: ["My name is JJ Ashcraft,", "and I am a..."],
+       speed: 50,
+       breakLines: false,
+       autoStart: false
+  });
+});
 
+</script>
 
 </body>
 
