@@ -4,8 +4,10 @@ body {
       padding: 0;
     }
       #header {
-        background-color: black;
-        opacity: 40
+        display: flex;
+        background-color: white;
+        justify-content: center;
+
         color: white;
         overflow: auto;
         padding-left: 25px;
@@ -21,10 +23,8 @@ body {
         font-family: 'Barlow Condensed', sans-serif;;
       }
       .logo {
-        align-content: center;
-        display: inline-block;
-        margin-right: 25px;
-        padding: 10px;
+        padding: 5px;
+      }
       }
       .leftMenu ul {
         list-style: none;
@@ -148,11 +148,81 @@ body {
           font-family: 'Barlow Condensed', sans-serif;
           text-align:center;
           align-content: center;
-          height: 180px;
-          width: 400px;
+          height: 100px;
+          width: 25%;
           margin: 0;
           flex-flow: row;
           flex-wrap: wrap;
           line-height: 90px;
 
         }
+
+        @media all and (max-width: 700px){
+          #largeImage {
+            padding: 200px 25px ;
+            background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left middle;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin: 0;
+          }
+          .projectBoxes {
+            background-color: #E37B40;
+            list-style: none;
+            color: white;
+            font-size: 30px;
+            font-family: 'Barlow Condensed', sans-serif;
+            text-align:center;
+            align-content: center;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            flex-flow: row;
+            flex-wrap: wrap;
+            line-height: 50px;
+
+          }
+
+    }
+
+    @media all and (min-width: 701px) and (max-width: 1000px){
+      .projectBoxes {
+        background-color: #E37B40;
+        list-style: none;
+        color: white;
+        font-size: 40px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-align:center;
+        align-content: center;
+        height: 100px;
+        width: 25%;
+        margin: 0;
+        flex-flow: row;
+        flex-wrap: wrap;
+        line-height: 90px;
+
+      }
+
+}
+/*
+@media all and (min-width: 1220px) and (max-width: 1500px){
+  .projectBoxes {
+    background-color: #E37B40;
+    list-style: none;
+    color: white;
+    font-size: 60px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align:center;
+    align-content: center;
+    height: 180px;
+    width: 50%;
+    margin: 0;
+    flex-flow: row;
+    flex-wrap: wrap;
+    line-height: 90px;
+
+  }
+
+} */
