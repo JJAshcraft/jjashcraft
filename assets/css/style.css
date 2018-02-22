@@ -1,9 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-      background-color: #324D5C;
-      margin: 0;
-      padding: 0;
-    }
-      #header {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* #header {
         display: flex;
         background-color: white;
         justify-content: center;
@@ -17,172 +23,238 @@ body {
       #header a:hover {
         font-weight: 700;
         color: rgba(158, 0, 93, 1);
-      }
-      a {
-        text-decoration: none;
-        font-family: 'Barlow Condensed', sans-serif;;
-      }
-      .logo {
-        padding: 5px;
-      }
-      .leftMenu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .leftMenu ul li {
-        display: inline-block;
-        padding: 15px;
-      }
-      .leftMenu {
-        float: left;
-        display: inline-block;
-         align-items: center;
-      }
-      .leftMenu ul li a {
-        color: white;
-         font-weight: 300;
-      }
+      } */
 
-      .rightMenu {
-        float: right;
-        display: inline-block;
-        color: black;
-      }
-      .rightMenu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .rightMenu ul li {
-        display: inline-block;
-        padding: 15px;
-      }
-      .rightMenu ul li a {
-        color: white;
-        font-weight: 300;
-        font-size: 26px;
-      }
-      #largeImage {
-        padding: 200px 25px ;
-        background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left top;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        margin: 0;
-      }
-      .description-box {
-        width: 40%;
-
-      }
-
-      .intro {
-        width: 100%;
-        height: 85vh;
-        background-color: #324D5C;
-      }
-
-      .description-box h1 {
-        margin: 0;
-        font-family: 'Barlow Condensed', sans-serif;;
-        font-weight: 700;
-        font-size: 60px;
-        color: white;
-      }
-       .description-box h3 {
-         margin: 0;
-          font-family: 'Barlow Condensed', sans-serif;;
-         font-size: 25px;
-         font-weight: 400;
-        color: white;
-      }
-      .description-box h4 {
-        margin: 0;
-         font-family: 'Barlow Condensed', sans-serif;;
-        color: white;
-        font-weight: 100;
-      }
-      .description-box p {
-        font-family: 'Barlow Condensed', sans-serif;;
-        font-weight: 300;
-        margin: 25px 0 25 0;
-        color: white;
-      }
-        .videoSection {
-          display: flex;
-          flex-direction: row;
-          background-color: black;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
-        .projectBoxes {
-          background-color: #E37B40;
-          list-style: none;
-          color: white;
-          font-size: 30px;
-          font-family: 'Barlow Condensed', sans-serif;
-          text-align:center;
-          align-content: center;
-          height: 50px;
-          width: 25%;
-          margin: 0;
-          flex-flow: row;
-          flex-wrap: wrap;
-          line-height: 50px;
-
-        }
-
-        @media all and (max-width: 700px){
-          #largeImage {
-            padding: 200px 25px ;
-            background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left middle;
-            background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            margin: 0;
-          }
-          .projectBoxes {
-            background-color: #E37B40;
-            list-style: none;
-            color: white;
-            font-size: 30px;
-            font-family: 'Barlow Condensed', sans-serif;
-            text-align:center;
-            align-content: center;
-            height: 50px;
-            width: 100%;
-            margin: 0;
-            flex-flow: row;
-            flex-wrap: wrap;
-            line-height: 50px;
-
-          }
-
-    }
-
-    @media all and (min-width: 701px) and (max-width: 1000px){
-      .projectBoxes {
-        background-color: #E37B40;
-        list-style: none;
-        color: white;
-        font-size: 30px;
-        font-family: 'Barlow Condensed', sans-serif;
-        text-align:center;
-        align-content: center;
-        height: 50px;
-        width: 25%;
-        margin: 0;
-        flex-flow: row;
-        flex-wrap: wrap;
-        line-height: 50px;
-
-      }
+a {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-decoration: none;
 
 }
+
+.intro {
+  width: 100%;
+  position: relative;
+  height: 90vh;
+  background-color: #262626;
+  /* background-color: white; */
+  margin: 0;
+  padding: 0;
+}
+
+.outer {
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo {
+  position: absolute;
+  width: 325px;
+  height: 325px;
+  padding: 10px;
+  margin: 0;
+  top: 250px;
+  -webkit-transition: scale 2s;
+  -moz-transition: scale 2000 ease-in-out 3000;
+  -ms-transition: scale 2000 ease-in-out 3000;
+  transition: scale 2s;
+}
+
+.logo-container:hover .logo {
+  -moz-transform: scale(6);
+  -webkit-transform: scale(6);
+  -ms-transform: scale(6);
+  transform: scale(6);
+}
+
+.leftMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leftMenu ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.leftMenu {
+  float: left;
+  display: inline-block;
+  align-items: center;
+}
+
+.leftMenu ul li a {
+  color: white;
+  font-weight: 300;
+}
+
+.rightMenu {
+  float: right;
+  display: inline-block;
+  color: black;
+}
+
+.rightMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rightMenu ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.rightMenu ul li a {
+  color: white;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+#largeImage {
+  padding: 200px 25px;
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+.description-box {
+  width: 40%;
+}
+
+.description-box h1 {
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  ;
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+}
+
+.description-box h3 {
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  ;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+.description-box h4 {
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  ;
+  color: white;
+  font-weight: 100;
+}
+
+.description-box p {
+  font-family: 'Barlow Condensed', sans-serif;
+  ;
+  font-weight: 300;
+  margin: 25px 0 25 0;
+  color: white;
+}
+
+.videoSection {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectBoxes {
+  background-color: #E37B40;
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  align-content: center;
+  height: 50px;
+  width: 25%;
+  margin: 0;
+  flex-flow: row;
+  flex-wrap: wrap;
+  line-height: 50px;
+}
+
+.grow:hover {
+  -webkit-transition: scale 2s;
+  -moz-transition: scale 2000 ease-in-out 3000;
+  -ms-transition: scale 2000 ease-in-out 3000;
+  transition: scale 2s;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.rotate:hover {
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
+@media all and (max-width: 700px) {
+  #largeImage {
+    padding: 200px 25px;
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left middle;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+  }
+  .projectBoxes {
+    background-color: #E37B40;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    flex-flow: row;
+    flex-wrap: wrap;
+    line-height: 50px;
+  }
+}
+
+@media all and (min-width: 701px) and (max-width: 1000px) {
+  .projectBoxes {
+    background-color: #E37B40;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    width: 25%;
+    margin: 0;
+    flex-flow: row;
+    flex-wrap: wrap;
+    line-height: 50px;
+  }
+}
+
 /*
 @media all and (min-width: 1220px) and (max-width: 1500px){
   .projectBoxes {
