@@ -209,6 +209,9 @@ a {
 }
 
 @media all and (max-width: 700px) {
+  .intro {
+    height: 40vh;
+  }
   #largeImage {
     padding: 200px 25px;
     background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left middle;
@@ -259,9 +262,7 @@ a {
     flex-wrap: wrap;
     line-height: 50px;
   }
-  .intro {
-    height: 40vh;
-  }
+
 }
 
 /*
