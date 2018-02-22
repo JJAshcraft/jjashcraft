@@ -71,7 +71,7 @@ a {
   -moz-transform: translateY(-1000px) scale(0.2) rotate(360deg);
   -webkit-transform: translateY(-1000px) scale(0.2) rotate(360deg);
   -ms-transform: translateY(-1000px) scale(0.2) rotate(360deg);
-  transform: scale(0.2) translateY(-1600px) rotate(360deg);
+  transform: scale(0.2) translateY(-1000px) rotate(360deg);
 }
 
 .leftMenu ul {
