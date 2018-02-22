@@ -259,6 +259,9 @@ a {
     flex-wrap: wrap;
     line-height: 50px;
   }
+  .intro {
+    height: 40vh;
+  }
 }
 
 /*
