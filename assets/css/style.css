@@ -212,6 +212,12 @@ a {
   .intro {
     height: 40vh;
   }
+  .outer:hover .logo {
+    -moz-transform: translateY(-2000px) scale(0.2) rotate(360deg);
+    -webkit-transform: translateY(-2000px) scale(0.2) rotate(360deg);
+    -ms-transform: translateY(-2000px) scale(0.2) rotate(360deg);
+    transform: translateY(-2000px) scale(0.2) rotate(360deg);
+  }
   #largeImage {
     padding: 200px 25px;
     background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left middle;
