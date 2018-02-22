@@ -60,7 +60,7 @@ a {
   width: 2000px;
   padding: 10px;
   margin: 0;
-  top: -300px;
+  top: -400px;
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
   -ms-transition: all 2s;
@@ -68,10 +68,10 @@ a {
 }
 
 .outer:hover .logo {
-  -moz-transform: translateY(-1200px) scale(0.1) rotate(360deg);
-  -webkit-transform: translateY(-1200px) scale(0.1) rotate(360deg);
-  -ms-transform: translateY(-1200px) scale(0.1) rotate(360deg);
-  transform: scale(0.1) translateY(-1200px) rotate(360deg);
+  -moz-transform: translateY(-1800px) scale(0.1) rotate(360deg);
+  -webkit-transform: translateY(-1800px) scale(0.1) rotate(360deg);
+  -ms-transform: translateY(-1800px) scale(0.1) rotate(360deg);
+  transform: scale(0.1) translateY(-1800px) rotate(360deg);
 }
 
 .leftMenu ul {
