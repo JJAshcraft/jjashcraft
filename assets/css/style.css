@@ -57,22 +57,21 @@ a {
 
 .logo {
   position: absolute;
-  width: 325px;
-  height: 325px;
+  width: 2000px;
   padding: 10px;
   margin: 0;
-  top: 250px;
-  -webkit-transition: scale 2s;
-  -moz-transition: scale 2000 ease-in-out 3000;
-  -ms-transition: scale 2000 ease-in-out 3000;
-  transition: scale 2s;
+  top: -300px;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  transition: all 2s;
 }
 
-.logo-container:hover .logo {
-  -moz-transform: scale(6);
-  -webkit-transform: scale(6);
-  -ms-transform: scale(6);
-  transform: scale(6);
+.outer:hover .logo {
+  -moz-transform: translateY(-1000px) scale(0.25) rotate(360deg);
+  -webkit-transform: translateY(-1000px) scale(0.25) rotate(360deg);
+  -ms-transform: translateY(-1000px) scale(0.25) rotate(360deg);
+  transform: scale(0.25) translateY(-1600px) rotate(360deg);
 }
 
 .leftMenu ul {
