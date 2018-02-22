@@ -236,10 +236,10 @@ a {
   }
 
   .outer:hover .logo {
-    -moz-transform: translateY(-2000px) scale(0.1) rotate(360deg);
-    -webkit-transform: translateY(-2000px) scale(0.1) rotate(360deg);
-    -ms-transform: translateY(-2000px) scale(0.1) rotate(360deg);
-    transform: scale(0.1) translateY(-2000px) rotate(360deg);
+    -moz-transform: translateY(-2100px) scale(0.1) rotate(360deg);
+    -webkit-transform: translateY(-2100px) scale(0.1) rotate(360deg);
+    -ms-transform: translateY(-2100px) scale(0.1) rotate(360deg);
+    transform: scale(0.1) translateY(-2100px) rotate(360deg);
   }
 }
 
