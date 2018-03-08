@@ -4,6 +4,9 @@ body {
   padding: 0;
   list-style: none;
 }
+.navbar-custom {
+  background-color: black;
+}
 a {
   font-family: barlow condensed;
   color: white;
@@ -85,7 +88,7 @@ a:hover {
 .navbar .navbar-text a {
     color: black;
   }
-  .navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link {
   color: black;
 }
 .navbar .navbar-nav .nav-link .white {
@@ -105,29 +108,18 @@ a:hover {
   background-color: #F53855;
 }
 .boxColors li:nth-child(5) {
-  background-color: #324D5C;
+  background-color: #F53855;
 }
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 18px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 3;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+.navbar-custom .dropdown-menu {
+    background-color: black;
+    border-radius: 0;
+}
+.navbar-custom .dropdown-item {
+    color: #ffffff;
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: white;
+    background-color: rgba(255,255,255,.5);
 }
