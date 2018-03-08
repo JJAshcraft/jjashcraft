@@ -1,119 +1,15 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 body {
   background-color: black;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
-
-/* #header {
-        display: flex;
-        background-color: white;
-        justify-content: center;
-
-        color: white;
-        overflow: auto;
-        padding-left: 25px;
-        padding-right: 25px;
-        font-size: 22px;
-      }
-      #header a:hover {
-        font-weight: 700;
-        color: rgba(158, 0, 93, 1);
-      } */
-
 a {
-  font-family: 'Barlow Condensed', sans-serif;
-  text-decoration: none;
-}
-
-.intro {
-  width: 100%;
-  position: relative;
-  height: 90vh;
-  background-color: #262626;
-  /* background-color: white; */
-  margin: 0;
-  padding: 0;
-}
-
-.outer {
-  overflow: hidden;
-  position: relative;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  padding: 0px;
-  margin: 0px;
-}
-
-.logo {
-  position: absolute;
-  width: 2000px;
-  padding: 10px;
-  margin: 0;
-  top: -400px;
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  transition: all 2s;
-}
-
-.outer:hover .logo {
-  -moz-transform: translateY(-50%) scale(0.1) rotate(360deg);
-  -webkit-transform: translateY(-50%) scale(0.1) rotate(360deg);
-  -ms-transform: translateY(-50%) scale(0.1) rotate(360deg);
-  transform: scale(0.1) translateY(-50%) rotate(360deg);
-}
-
-.leftMenu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.leftMenu ul li {
-  display: inline-block;
-  padding: 15px;
-}
-
-.leftMenu {
-  float: left;
-  display: inline-block;
-  align-items: center;
-}
-
-.leftMenu ul li a {
+  font-family: barlow condensed;
   color: white;
-  font-weight: 300;
 }
-
-.rightMenu {
-  float: right;
-  display: inline-block;
-  color: black;
-}
-
-.rightMenu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.rightMenu ul li {
-  display: inline-block;
-  padding: 15px;
-}
-
-.rightMenu ul li a {
-  color: white;
-  font-weight: 300;
-  font-size: 26px;
+a:hover {
+  color: grey;
 }
 
 #largeImage {
@@ -178,130 +74,60 @@ a {
 }
 
 .projectBoxes {
-  background-color: #E37B40;
   list-style: none;
   color: white;
   font-size: 30px;
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
-  align-content: center;
-  height: 50px;
-  width: 25%;
-  margin: 0;
-  flex-flow: row;
-  flex-wrap: wrap;
-  line-height: 50px;
-  -webkit-transition: scale 2s ease-in;
-  -moz-transition: scale 2s ease-in;
-  -ms-transition: scale 2s ease-in;
-  transition: scale 2s ease-in;
+  padding: 5px;
+  margin: 5px;
 }
-
-.grow {
-  transition: all .2s ease-in-out;
+.navbar .navbar-text a {
+    color: black;
+  }
+  .navbar .navbar-nav .nav-link {
+  color: black;
 }
-
-.grow:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
+.navbar .navbar-nav .nav-link .white {
+  color: white;
 }
+.boxColors li:nth-child(1) {
+  background-color: #E37B40;
 
-.rotate:hover {
-  -webkit-transform: rotateZ(-30deg);
-  -ms-transform: rotateZ(-30deg);
-  transform: rotateZ(-30deg);
 }
-
-@media all and (max-width: 700px) {
-  .intro {
-    height: 40vh;
-  }
-  .logo {
-    position: absolute;
-    width: 1000px;
-    padding: 10px;
-    margin: 0;
-    top: -400px;
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -ms-transition: all 2s;
-    transition: all 2s;
-  }
-  .outer:hover .logo {
-    -moz-transform: translateY(-1000px) scale(0.2) rotate(360deg);
-    -webkit-transform: translateY(-1000px) scale(0.2) rotate(360deg);
-    -ms-transform: translateY(-1000px) scale(0.2) rotate(360deg);
-    transform: translateY(-1000px) scale(0.2) rotate(360deg);
-  }
-  #largeImage {
-    padding: 200px 25px;
-    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left middle;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-  }
-  .projectBoxes {
-    background-color: #E37B40;
-    list-style: none;
-    color: white;
-    font-size: 30px;
-    font-family: 'Barlow Condensed', sans-serif;
-    text-align: center;
-    align-content: center;
-    height: 50px;
-    width: 100%;
-    margin: 0;
-    flex-flow: row;
-    flex-wrap: wrap;
-    line-height: 50px;
-  }
-  .outer:hover .logo {
-    -moz-transform: translateY(-2100px) scale(0.1) rotate(360deg);
-    -webkit-transform: translateY(-2100px) scale(0.1) rotate(360deg);
-    -ms-transform: translateY(-2100px) scale(0.1) rotate(360deg);
-    transform: scale(0.1) translateY(-2100px) rotate(360deg);
-  }
+.boxColors li:nth-child(2) {
+  background-color: #46B29D;
 }
-
-@media all and (min-width: 701px) and (max-width: 1000px) {
-  .projectBoxes {
-    background-color: #E37B40;
-    list-style: none;
-    color: white;
-    font-size: 30px;
-    font-family: 'Barlow Condensed', sans-serif;
-    text-align: center;
-    align-content: center;
-    height: 50px;
-    width: 25%;
-    margin: 0;
-    flex-flow: row;
-    flex-wrap: wrap;
-    line-height: 50px;
-  }
+.boxColors li:nth-child(3) {
+  background-color: #F0CA4D;
 }
+.boxColors li:nth-child(4) {
+  background-color: #F53855;
+}
+.boxColors li:nth-child(5) {
+  background-color: #324D5C;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 3;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
-/*
-@media all and (min-width: 1220px) and (max-width: 1500px){
-  .projectBoxes {
-    background-color: #E37B40;
-    list-style: none;
-    color: white;
-    font-size: 60px;
-    font-family: 'Barlow Condensed', sans-serif;
-    text-align:center;
-    align-content: center;
-    height: 180px;
-    width: 50%;
-    margin: 0;
-    flex-flow: row;
-    flex-wrap: wrap;
-    line-height: 90px;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
 
-  }
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
 
-} */
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
