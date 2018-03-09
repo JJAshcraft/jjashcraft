@@ -8,7 +8,7 @@
             var data = JSON.parse(xhr.responseText);
             if(data.status == 'ok'){
 
-                var output = '<h1>'+data.feed.title+'</h1>';
+                var output = '<h1>''Recent Articles''</h1>';
 
                 for(var i=0;i<data.items.length;++i){
 

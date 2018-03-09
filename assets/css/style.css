@@ -2,8 +2,9 @@ body {
   background-color: white;
   list-style: none;
 }
-.imagemod > img {
-  width: 50%;
+.imagemod img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .navbar-custom {
