@@ -1,20 +1,28 @@
-$.ajax({
-        url: 'https://api.rss2json.com/v1/api.json',
-        method: 'GET',
-        dataType: 'json',
-        data: {
-            rss_url: 'https://www.medium.com/feed/@jjashcraft',
-            api_key: 'daaojcgetrusjckgyl79sstz3fcg6hpny06ukdis', // put your api key here
-            count: 2
+  var content = document.getElementById('content');
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState==4 && xhr.status==200)
+        {
+            var data = JSON.parse(xhr.responseText);
+            if(data.status == 'ok'){
+
+                var output = '<h1>'+data.feed.title+'</h1>';
+
+                for(var i=0;i<data.items.length;++i){
+
+                    output += '<p><h2><a href="' +
+                    data.items[i].link + '" >' +
+                    data.items[i].title + '</h2></a></p>';
+
+                }
+
+
+                content.innerHTML = output;
+
+            }
         }
-}).done(function (response) {
-    if(response.status != 'ok'){ throw response.message; }
-
-    console.log('====== ' + response.feed.title + ' ======');
-
-    for(var i in response.items){
-        var item = response.items[i];
-        console.log(item.title);
-
-    }
-});
+    };
+    xhr.open('GET','https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jjashcraft',true);
+    xhr.send();
