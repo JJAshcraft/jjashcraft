@@ -20,8 +20,8 @@
 
                     output += data.items[i].content;
 
-                    sideOutput += '<a href="' + '#' + [i] + '"><p><h2>' +
-                    data.items[i].title + '</h2></p></a>';
+                    sideOutput += '<a href="' + '#' + [i] + '"><p><h4>' +
+                    data.items[i].title + '</h4></p></a>';
 
                 }
 
