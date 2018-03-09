@@ -151,11 +151,18 @@ p {
   margin: 10px;
 
 }
-.gallery img {
-  width: 100%;
+.gallery img:not(.mainImage) {
+  width: 25%;
   padding: 10px;
   margin: 5px;
 }
+.mainImage {
+  width: 100%;
+
+}
+/* .gallery img:hover:not(.mainImage) {
+  width: 100%;
+} */
 
 @media (max-width: 500px) {
   .gallery {
@@ -171,6 +178,11 @@ p {
     margin-top: 20px;
   }
 }
-.profileImage {
-  width: 200px;
+.mainImage {
+  width: 100px;
+  border-radius: 20px;
+}
+
+img:focus {
+    width: 400px;
 }
