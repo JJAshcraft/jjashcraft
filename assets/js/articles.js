@@ -13,10 +13,9 @@
                 for(var i=0;i<data.items.length;++i){
 
                     output += '<p><h2>' +
-                    data.items[i].link + '" >' +
                     data.items[i].title + '</h2></p>';
 
-                    output += '<p>' + data.items[i].content + '</p>';
+                    output += data.items[i].content;
 
                 }
 
