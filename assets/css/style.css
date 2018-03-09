@@ -191,5 +191,7 @@ img:focus {
   .gallery h1 {
     margin-top: 20px;
   }
-
+  img:focus {
+     width: 400px;
+  }
 }
