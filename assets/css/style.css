@@ -2,6 +2,9 @@ body {
   background-color: white;
   list-style: none;
 }
+.imagemod > img {
+  width: 50%;
+}
 
 .navbar-custom {
   background-color: black;
