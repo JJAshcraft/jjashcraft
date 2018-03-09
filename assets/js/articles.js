@@ -14,14 +14,14 @@
                 var sideOutput = '';
 
                 for(var i=0;i<data.items.length;++i){
-
+                    output += '<div' + ' id="' + [i] + '">'
                     output += '<p><h2>' +
                     data.items[i].title + '</h2></p>';
 
                     output += data.items[i].content;
 
-                    sideOutput += '<p><h2>' +
-                    data.items[i].title + '</h2></p>';
+                    sideOutput += '<a href="' + '#' + [i] + '"><p><h2>' +
+                    data.items[i].title + '</h2></p></a>';
 
                 }
 
