@@ -1,16 +1,17 @@
 body {
-  background-color: black;
-  margin: 0;
-  padding: 0;
+  background-color: white;
   list-style: none;
 }
+
 .navbar-custom {
   background-color: black;
 }
+
 a {
   font-family: barlow condensed;
   color: white;
 }
+
 a:hover {
   color: grey;
 }
@@ -64,18 +65,6 @@ a:hover {
   color: white;
 }
 
-.videoSection {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  justify-content: center;
-  flex-wrap: wrap;
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  transition: all 2s;
-}
-
 .projectBoxes {
   list-style: none;
   color: white;
@@ -85,44 +74,80 @@ a:hover {
   padding: 5px;
   margin: 5px;
 }
+
 .navbar .navbar-text a {
-    color: black;
-  }
+  color: black;
+}
+
 .navbar .navbar-nav .nav-link {
   color: black;
 }
+
 .navbar .navbar-nav .nav-link .white {
   color: white;
 }
+
 .boxColors li:nth-child(1) {
   background-color: #E37B40;
-
 }
+
 .boxColors li:nth-child(2) {
   background-color: #46B29D;
 }
+
 .boxColors li:nth-child(3) {
   background-color: #F0CA4D;
 }
+
 .boxColors li:nth-child(4) {
   background-color: #F53855;
 }
+
 .boxColors li:nth-child(5) {
   background-color: #F53855;
 }
 
 .navbar-custom .dropdown-menu {
-    background-color: black;
-    border-radius: 0;
+  background-color: black;
+  border-radius: 0;
 }
+
 .navbar-custom .dropdown-item {
-    color: #ffffff;
+  color: #ffffff;
 }
-.navbar-custom .dropdown-item:hover,
-.navbar-custom .dropdown-item:focus {
-    color: white;
-    background-color: rgba(255,255,255,.5);
+
+.navbar-custom .dropdown-item:hover, .navbar-custom .dropdown-item:focus {
+  color: white;
+  background-color: rgba(255, 255, 255, .5);
 }
+
 .textlinks {
   padding-right: 20px;
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -ms-column-count: 3;
+  margin: 10px;
+}
+.gallery img {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+
+@media (max-width: 500px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -ms-column-count: 2;
+  }
+  .gallery img {
+    width: 100%;
+  }
 }
