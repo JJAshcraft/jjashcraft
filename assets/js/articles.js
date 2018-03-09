@@ -14,6 +14,7 @@
                 var sideOutput = '';
 
                 for(var i=0;i<data.items.length;++i){
+
                     output += '<div' + ' id="' + [i] + '">'
                     output += '<p><h2>' +
                     data.items[i].title + '</h2></p>';
@@ -22,8 +23,8 @@
 
                     output += data.items[i].content;
 
-                    sideOutput += '<a href="' + '#' + [i] + '"><p><h4>' +
-                    data.items[i].title + '</h4></p></a>';
+                    sideOutput += '<p><a href="' + '#' + [i] + '"><h4>' +
+                    data.items[i].title + '</h4></a></p>';
 
                 }
 
@@ -34,5 +35,6 @@
             }
         }
     };
+
     xhr.open('GET','https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jjashcraft',true);
     xhr.send();
