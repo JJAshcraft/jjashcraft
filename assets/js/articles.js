@@ -17,6 +17,8 @@
                     output += '<div' + ' id="' + [i] + '">'
                     output += '<p><h2>' +
                     data.items[i].title + '</h2></p>';
+                    output += '<p><h5>' +
+                    data.items[i].pubDate + '</h5></p>';
 
                     output += data.items[i].content;
 
