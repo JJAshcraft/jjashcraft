@@ -1,4 +1,6 @@
   var content = document.getElementById('content');
+  var sidebar = document.getElementById('sidebar');
+
 
     var xhr = new XMLHttpRequest();
 
@@ -9,6 +11,7 @@
             if(data.status == 'ok'){
 
                 var output = '';
+                var sideOutput = '';
 
                 for(var i=0;i<data.items.length;++i){
 
@@ -17,10 +20,14 @@
 
                     output += data.items[i].content;
 
+                    sideOutput += '<p><h2>' +
+                    data.items[i].title + '</h2></p>';
+
                 }
 
 
                 content.innerHTML = output;
+                sidebar.innerHTML = sideOutput;
 
             }
         }
