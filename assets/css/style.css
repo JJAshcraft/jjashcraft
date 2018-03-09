@@ -172,12 +172,7 @@ img:focus {
 /* .gallery img:hover:not(.mainImage) {
   width: 100%;
 } */
-@media (min-width: 501px) and (max-width: 700px) {
-  .profileImage {
-    width: 100%;
-    padding: 10px 10px 10px 0;
-  }
-}
+
 @media (max-width: 500px) {
   .gallery {
     -webkit-column-count: 1;
