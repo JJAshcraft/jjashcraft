@@ -11,7 +11,7 @@
             if(data.status == 'ok'){
 
                 var output = '';
-                var sideOutput = '';
+
 
                 for(var i = 0;i < data.items.length;++i){
 
@@ -23,14 +23,12 @@
 
                     output += data.items[i].content;
 
-                    sideOutput += '<p><a href="' + '#' + [i] + '"><h4>' +
-                    data.items[i].title + '</h4></a></p>';
 
                 }
 
 
                 content.innerHTML = output;
-                sidebar.innerHTML = sideOutput;
+            
 
             }
         }
