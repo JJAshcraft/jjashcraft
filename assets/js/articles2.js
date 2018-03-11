@@ -36,7 +36,7 @@ $.ajax({
         sideOutput += '<p><h2>' +
         item.title + '</h2></p>';
       }
-      
+
 content.innerHTML = output;
-sidebar.innerHTML = output;
+sidebar.innerHTML = sideOutput;
 });
