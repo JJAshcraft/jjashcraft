@@ -34,5 +34,5 @@ $.ajax({
     content.innerHTML = output;
     sidebar.innerHTML = sideOutput;
 
-    }
+
 });
