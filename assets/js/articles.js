@@ -28,11 +28,11 @@
 
 
                 content.innerHTML = output;
-            
+
 
             }
         }
     };
 
-    xhr.open('GET','https://api.rss2json.com/v1/api.json?&rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jjashcraftapi_key=daaojcgetrusjckgyl79sstz3fcg6hpny06ukdis&count=2',true);
+    xhr.open('GET','https://api.rss2json.com/v1/api.json?&rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jjashcraft&api_key=daaojcgetrusjckgyl79sstz3fcg6hpny06ukdis&count=2',true);
     xhr.send();
