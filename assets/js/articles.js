@@ -13,7 +13,7 @@
                 var output = '';
                 var sideOutput = '';
 
-                for(var i=0;i<data.items.length;++i){
+                for(var i = 0;i < data.items.length;++i){
 
                     output += '<div' + ' id="' + [i] + '">'
                     output += '<p><h2>' +
@@ -36,5 +36,5 @@
         }
     };
 
-    xhr.open('GET','https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jjashcraft',true);
+    xhr.open('GET','https://api.rss2json.com/v1/api.json?api_key=daaojcgetrusjckgyl79sstz3fcg6hpny06ukdis&count=2&rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jjashcraft',true);
     xhr.send();
