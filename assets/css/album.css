@@ -187,12 +187,6 @@ p {
   padding: 20px 20px 20px 0;
 }
 
-
-@media (min-width:500px) {
-  body {
-    margin-top: -30px;
-  }
-}
 :root {
   --jumbotron-padding-y: 3rem;
 }
