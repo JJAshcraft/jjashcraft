@@ -1,3 +1,7 @@
+
+var content = document.getElementById('content');
+var sidebar = document.getElementById('sidebar');
+
 $.ajax({
         url: 'https://api.rss2json.com/v1/api.json',
         method: 'GET',
@@ -15,24 +19,24 @@ $.ajax({
     var output = '';
     var sideOutput = '';
 
-    for(var i = 0;i < data.items.length;++i){
+    for(var i in response.items){
+            var item = response.items[i];
+            console.log(item.title);
+
 
         output += '<div' + ' id="' + [i] + '">'
         output += '<p><h2>' +
-        data.items[i].title + '</h2></p>';
+        item.title + '</h2></p>';
         output += '<p><h5>' +
-        data.items[i].pubDate + '</h5></p>';
+        item.pubDate + '</h5></p>';
 
-        output += data.items[i].content;
+        output += item.content;
 
-        sideOutput += '<p><a href="' + '#' + [i] + '"><h4>' +
-        data.items[i].title + '</h4></a></p>';
-
-    }
-
-
-    content.innerHTML = output;
-    sidebar.innerHTML = sideOutput;
-
-
+        sideOutput += '<div' + ' id="' + [i] + '">'
+        sideOutput += '<p><h2>' +
+        item.title + '</h2></p>';
+      }
+      
+content.innerHTML = output;
+sidebar.innerHTML = output;
 });
