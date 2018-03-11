@@ -1,3 +1,4 @@
+
 body {
   background-color: white;
   list-style: none;
@@ -7,7 +8,6 @@ body {
 body li {
   list-style: none;
 }
-
 .imagemod img {
   max-width: 100%;
   max-height: 100%;
@@ -53,57 +53,9 @@ h4 {
 }
 
 p {
-  font-family: 'adamina', serif;
+  font-family: 'barlow condensed', serif;
 }
 
-#largeImage {
-  padding: 200px 25px;
-  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left top;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0;
-}
-
-.description-box {
-  width: 40%;
-}
-
-.description-box h1 {
-  margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  font-weight: 700;
-  font-size: 60px;
-  color: white;
-}
-
-.description-box h3 {
-  margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  font-size: 25px;
-  font-weight: 400;
-  color: white;
-}
-
-.description-box h4 {
-  margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  color: white;
-  font-weight: 100;
-}
-
-.description-box p {
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  font-weight: 300;
-  margin: 25px 0 25 0;
-  color: white;
-}
 
 .projectBoxes {
   list-style: none;
@@ -161,15 +113,6 @@ p {
   padding-right: 20px;
 }
 
-.gallery {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -ms-column-count: 2;
-  margin: 10px;
-  transition: scale 2s ease-in;
-}
-
 .wingsuitColumn img:not(.profileImage) {
   width: 100px;
   padding: 10px;
@@ -189,42 +132,119 @@ p {
   padding: 20px 20px 20px 0;
 }
 
-:root {
-  --jumbotron-padding-y: 3rem;
+
+.box-shadow {
+   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+ }
+
+/* new gallery css below */
+#rig {
+    max-width:100%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#fff;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
 }
 
-.jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-  }
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
 }
 
-.jumbotron p:last-child {
-  margin-bottom: 0;
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+
 }
 
-.jumbotron-heading {
-  font-weight: 300;
+#rig li:hover .rig-img {
+    transform:scale(1.05);
 }
 
-.jumbotron .container {
-  max-width: 40rem;
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #000 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
 }
 
-footer p {
-  margin-bottom: .25rem;
+
+@media (max-width: 1400px) {
+    #rig li {
+        width:33.33%;
+    }
 }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+@media (max-width: 800px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+@media (max-width: 500px) {
+    #rig li {
+        width:100%;
+    }
+}
