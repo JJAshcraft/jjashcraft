@@ -28,14 +28,14 @@ $.ajax({
 
         output += '<div>'
         output += '<a class="anchor" id="' + [i] + '"></a>'
-        output += '<p><i class="far fa-file-alt"></i><h2>' +
+        output += '<p><h2>' +
         item.title + '</h2></p>';
         output += '<p><h5>' +
         item.pubDate + '</h5></p>';
 
         output += item.content;
 
-        sideOutput += '<p><a href="' + '#' + [i] + '"><h5>' +
+        sideOutput += '<p><a href="' + '#' + [i] + '"><h5>' + '<i class="fas fa-file-alt"></i> - ' +
         item.title + '</h5></a></p><hr>';
       }
 
