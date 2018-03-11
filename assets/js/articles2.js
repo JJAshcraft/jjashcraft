@@ -24,7 +24,7 @@ $.ajax({
             console.log(item.title);
 
 
-        output += '<div' + ' id="' + [i] + '">'
+        output += '<div' + ' id="' + [i] + '">';
         output += '<p><h2>' +
         item.title + '</h2></p>';
         output += '<p><h5>' +
@@ -32,8 +32,7 @@ $.ajax({
 
         output += item.content;
 
-        sideOutput += '<p><a href="' + '#' + [i] + '"' + 'class="anchor"><h4>' +
-        item.title + '</h4></a></p>';
+        sideOutput += '<p><a href=\"' + '#' + [i] + '\"' + 'class="anchor"><h4>' + item.title + '</h4></a></p>';
       }
 
 content.innerHTML = output;
