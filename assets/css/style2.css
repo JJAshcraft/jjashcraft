@@ -2,6 +2,7 @@ body {
   background-color: white;
   list-style: none;
   font-family: barlow condensed;
+  font-size: 22px;
 }
 body li {
   list-style: none;
@@ -12,12 +13,7 @@ color: grey;
 background-color: grey;
 border: none;
 }
-a.anchor {
-    display: block;
-    position: relative;
-    top: -60px;
-    visibility: hidden;
-}
+
 
 .imagemod img {
   max-width: 100%;
@@ -199,36 +195,15 @@ p {
   width: 40%;
   padding: 20px 20px 20px 0;
 }
-
-/* .gallery img:hover:not(.mainImage) {
-  width: 100%;
-} */
-/* @media (min-width: 501px) and (max-width: 1000px) {
-  .profileImage {
-    width: 100%;
-    padding: 10px 10px 10px 0;
-  }
+.hover04 img {
+	width: 400px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
-
-@media (max-width: 500px) {
-  .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -ms-column-count: 1;
-  }
-  .gallery img {
-    width: 100%;
-  }
-  .gallery h1 {
-    margin-top: 20px;
-  }
-  img:focus {
-    width: 400px;
-  }
-} */
-@media (min-width:500px) {
-  body {
-    margin-top: -30px;
-  }
+.hover04:hover img {
+	width: 300px;
+}
+.fontFam {
+  font-family: 'barlow condensed', sans-serif !important;
 }
