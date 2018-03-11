@@ -1,6 +1,7 @@
 body {
   background-color: white;
   list-style: none;
+  font-family: barlow condensed;
 }
 body li {
   list-style: none;
