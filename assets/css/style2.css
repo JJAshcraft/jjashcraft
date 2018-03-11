@@ -6,8 +6,17 @@ body {
 body li {
   list-style: none;
 }
+hr {
+height: 1px;
+color: grey;
+background-color: grey;
+border: none;
+}
 a.anchor {
-  display: block; position: relative; top: 100px; visibility: hidden;
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
 }
 
 .imagemod img {

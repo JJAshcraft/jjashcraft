@@ -23,16 +23,20 @@ $.ajax({
             var item = response.items[i];
             console.log(item.title);
 
+            // output += '<div ' + ' id="' + [i] + '">'
+            // output += '<a class="anchor" id="top"></a>'
 
-        output += '<div' + ' id="' + [i] + '">';
-        output += '<p><h2>' +
+        output += '<div>'
+        output += '<a class="anchor" id="' + [i] + '"></a>'
+        output += '<p><i class="far fa-file-alt"></i><h2>' +
         item.title + '</h2></p>';
         output += '<p><h5>' +
         item.pubDate + '</h5></p>';
 
         output += item.content;
 
-        sideOutput += '<p><a href=\"' + '#' + [i] + '\"' + 'class="anchor"><h4>' + item.title + '</h4></a></p>';
+        sideOutput += '<p><a href="' + '#' + [i] + '"><h5>' +
+        item.title + '</h5></a></p><hr>';
       }
 
 content.innerHTML = output;
