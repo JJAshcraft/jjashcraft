@@ -6,6 +6,9 @@ body {
 body li {
   list-style: none;
 }
+a.anchor {
+  display: block; position: relative; top: 100px; visibility: hidden;
+}
 
 .imagemod img {
   max-width: 100%;

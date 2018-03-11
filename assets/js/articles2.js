@@ -32,7 +32,7 @@ $.ajax({
 
         output += item.content;
 
-        sideOutput += '<p><a href="' + '#' + [i] + '"><h4>' +
+        sideOutput += '<p><a href="' + '#' + [i] + '" class="anchor"><h4>' +
         item.title + '</h4></a></p>';
       }
 
