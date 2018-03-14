@@ -251,7 +251,15 @@ p {
     .contentBar {
       padding: 20px;
       margin: 20px;
+
     }
+    .mainPhoto {
+
+    }
+   body > row {
+     padding: 0;
+     margin: 0;
+   }
 
 }
 
