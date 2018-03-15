@@ -1,21 +1,13 @@
+
 body {
   background-color: white;
   list-style: none;
-  font-family: barlow condensed;
-  font-size: 18px;
-
+  font-family: Bitter;
+  font-size: 20px;
 }
 body li {
   list-style: none;
 }
-hr {
-height: 1px;
-color: grey;
-background-color: grey;
-border: none;
-}
-
-
 .imagemod img {
   max-width: 100%;
   max-height: 100%;
@@ -26,92 +18,53 @@ border: none;
 }
 
 a {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: white;
 }
 
 a:hover {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: grey;
 }
 
 .darklinks a {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: black;
 }
 .darklinks a:hover {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: grey;
 }
 
 h1 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
+    font-weight: bold;
 }
 
 h2 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
+    font-weight: bold;
 }
 
 h3 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
+    font-weight: bold;
 }
 
 h4 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
 }
 
 p {
-  font-family: 'adamina', serif;
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+}
+.inlineHeading {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Bitter;
 }
 
-#largeImage {
-  padding: 200px 25px;
-  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, #000000 100%), url(/assets/img/wingsuits/29_X3_OrangeYellowBlack-min.jpg) no-repeat left top;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0;
-}
-
-.description-box {
-  width: 40%;
-}
-
-.description-box h1 {
-  margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  font-weight: 700;
-  font-size: 60px;
-  color: white;
-}
-
-.description-box h3 {
-  margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  font-size: 25px;
-  font-weight: 400;
-  color: white;
-}
-
-.description-box h4 {
-  margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  color: white;
-  font-weight: 100;
-}
-
-.description-box p {
-  font-family: 'Barlow Condensed', sans-serif;
-  ;
-  font-weight: 300;
-  margin: 25px 0 25 0;
-  color: white;
-}
 
 .projectBoxes {
   list-style: none;
@@ -168,6 +121,16 @@ p {
 .textlinks {
   padding-right: 20px;
 }
+
+
+.smallImage {
+  width: 100px;
+}
+
+.profileImage {
+  width: 100%;
+}
+
 
 .gallery {
   -webkit-column-count: 2;
