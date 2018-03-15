@@ -1,9 +1,9 @@
 
 body {
-  background-color: white;
+  background-color: black;
   list-style: none;
-  font-family: barlow condensed;
-  font-size: 18px;
+  font-family: Bitter;
+  font-size: 20px;
 }
 body li {
   list-style: none;
@@ -18,42 +18,51 @@ body li {
 }
 
 a {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: white;
 }
 
 a:hover {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: grey;
 }
 
 .darklinks a {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: black;
 }
 .darklinks a:hover {
-  font-family: barlow condensed;
+  font-family: Barlow Condensed;
   color: grey;
 }
 
 h1 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
+    font-weight: bold;
 }
 
 h2 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
+    font-weight: bold;
 }
 
 h3 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
+    font-weight: bold;
 }
 
 h4 {
-  font-family: 'barlow condensed', sans-serif;
+  font-family: 'Bitter', sans-serif;
 }
 
 p {
-  font-family: 'barlow condensed', serif;
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+}
+.inlineHeading {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Bitter;
 }
 
 
@@ -113,29 +122,15 @@ p {
   padding-right: 20px;
 }
 
-.wingsuitColumn img:not(.profileImage) {
-  width: 100px;
-  padding: 10px;
-  margin: 5px;
-}
 
 .smallImage {
   width: 100px;
 }
 
-.wingsuitColumn img:focus {
-  width: 300px;
-  outline: none;
-}
 .profileImage {
-  width: 40%;
-  padding: 20px 20px 20px 0;
+  width: 100%;
 }
 
-
-.box-shadow {
-   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
- }
 
 /* new gallery css below */
 #rig {
@@ -226,14 +221,14 @@ p {
 }
 @media (max-width: 9000px) {
     #rig li {
-        width:25%;
+        width:33.33%;
     }
 }
 
 
 @media (max-width: 1400px) {
     #rig li {
-        width:25%;
+        width:33.33%;
     }
 }
 
