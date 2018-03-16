@@ -130,7 +130,10 @@ p {
 .profileImage {
   width: 100%;
 }
-
+.mpnone {
+  margin: 0;
+  padding: 0;
+}
 
 .gallery {
   -webkit-column-count: 2;

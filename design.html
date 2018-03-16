@@ -9,118 +9,130 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link href="./assets/css/album.css" rel="stylesheet" type="text/css" />
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Adamina|Barlow+Condensed:400,500');
+    @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Bitter|Open+Sans');
   </style>
 </head>
 
 <body>
 
+  <div class="container-fluid mpnone">
+    <nav class="navbar navbar-expand-md navbar-dark text-nowrap static-top justify-content-end navbar-custom">
+      <!-- <a class="navbar-bran align-top" href="https://www.jjashcraft.com" https://www.jjashcraft.com> <img src="/assets/img/logonew.png" alt="logo" width="150px"></a> -->
+      <a class="navbar-brand" href="https://www.jjashcraft.com" https://www.jjashcraft.com><img src="/assets/img/logoicon.svg" alt="logo" width="25px"> JJASHCRAFT.COM&nbsp;&nbsp;</a>
+      <div class="d-inline">
+        <a class="textlinks align-bottom" target="_blank" rel="noopener" href="https://github.com/JJAshcraft"><i class="fab fa-github"></i></a>
+        <a class="textlinks align-bottom" target="_blank" rel="noopener" href="https://www.instagram.com/jjashcraft/"><i class="fab fa-instagram"></i></a>
+        <a class="textlinks align-bottom" target="_blank" rel="noopener" href="https://www.youtube.com/c/JJASHCRAFT"><i class="fab fa-youtube"></i></a>
 
-  <nav class="navbar navbar-expand-md navbar-dark text-nowrap static-top justify-content-end navbar-custom">
-    <!-- <a class="navbar-bran align-top" href="https://www.jjashcraft.com" https://www.jjashcraft.com> <img src="/assets/img/logonew.png" alt="logo" width="150px"></a> -->
-    <a class="navbar-brand" href="https://www.jjashcraft.com" https://www.jjashcraft.com><img src="/assets/img/logoicon.svg" alt="logo" width="25px"> JJASHCRAFT.COM&nbsp;&nbsp;</a>
-    <div class="d-inline">
-      <a class="textlinks align-bottom" target="_blank" rel="noopener" href="https://github.com/JJAshcraft"><i class="fab fa-github"></i></a>
-      <a class="textlinks align-bottom" target="_blank" rel="noopener" href="https://www.instagram.com/jjashcraft/"><i class="fab fa-instagram"></i></a>
-      <a class="textlinks align-bottom" target="_blank" rel="noopener" href="https://www.youtube.com/c/JJASHCRAFT"><i class="fab fa-youtube"></i></a>
+      </div>
 
-    </div>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-arrow-alt-circle-down text-danger"></i></span>
       </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav boxColors">
-        <!-- <li class="nav-item dropdown"> -->
-        <a class="nav-link text-center text-white" href="design.html" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-code"></i>&nbsp;Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" href="articles.html"><i class="fas fa-document"></i>&nbsp;Articles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" href="contact.html"><i class="fas fa-envelope"></i>&nbsp;Request A Quote</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-center" target="_blank" rel="noopener" href="https://hello.dubsado.com/public/client/portal/5aa6a4d07341702b89ccb3b5"><i class="fas fa-child"></i>&nbsp;Client Portal</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav boxColors">
+          <!-- <li class="nav-item dropdown"> -->
+          <a class="nav-link text-center text-white" href="design.html" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-code"></i>&nbsp;Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="articles.html"><i class="fas fa-document"></i>&nbsp;Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="contact.html"><i class="fas fa-envelope"></i>&nbsp;Request A Quote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" target="_blank" rel="noopener" href="https://hello.dubsado.com/public/client/portal/5aa6a4d07341702b89ccb3b5"><i class="fas fa-child"></i>&nbsp;Client Portal</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <ul id="rig">
-    <li>
-      <a class="rig-cell" href="#">
+    <section class="text-center">
+
+      <p class="text-white h5 text-center">Filter Projects:</p>
+      <div class="allButtons filters-button-group text-center p-2">
+        <button class="btn btn-light btn-first m-1 fontFam" data-filter="*">All</button>
+        <button class="btn btn-dark m-1 fontFam" data-filter=".webdesign">Web Design</button>
+        <button class="btn btn-dark m-1 fontFam" data-filter=".graphicdesign">Graphic Design</button>
+        <button class="btn btn-dark m-1 fontFam" data-filter=".videography">Videography</button>
+        <button class="btn btn-dark m-1 fontFam" data-filter=".photography">Photography</button>
+        <button class="btn btn-dark m-1 fontFam" data-filter=".development">Development</button>
+      </div>
+    </section>
+
+    <div id="rig" class="grid">
+      <div class="portfolio-item rig-cell graphicdesign webdesign photography videography development">
+        <a href="#">
             <img class="rig-img" src="assets\img\design_projects_ol.png">
             <span class="rig-overlay"></span>
             <span class="rig-text">Design Projects</span>
         </a>
-    </li>
-    <li>
-      <a class="rig-cell" href="#">
+      </div>
+      <div class="portfolio-item rig-cell photography">
+        <a href="#">
               <img class="rig-img" src="assets\img\wingsuit_thumb.png">
               <span class="rig-overlay"></span>
               <span class="rig-text">Wingsuit Photography</span>
           </a>
-    </li>
+      </div>
 
-    <li>
-      <a class="rig-cell" href="#">
+      <div class="portfolio-item rig-cell graphicdesign">
+        <a href="#">
               <img class="rig-img" src="assets\img\vsc_ol.png">
               <span class="rig-overlay"></span>
               <span class="rig-text">Creating The VSC Logo</span>
           </a>
-    </li>
-
-    <li>
-      <a class="rig-cell" href="#">
+      </div>
+      <div class="portfolio-item rig-cell graphicdesign webdesign development">
+        <a href="#">
               <img class="rig-img" src="assets\img\moonlight_ol.png">
               <span class="rig-overlay"></span>
               <span class="rig-text">Moonlight Rigging Logo/Website</span>
           </a>
-    </li>
-    <li>
-      <a class="rig-cell" href="#">
+      </div>
+      <div class="portfolio-item rig-cell graphicdesign webdesign development">
+        <a href="#">
               <img class="rig-img" src="assets\img\muriels_ol.png">
               <span class="rig-overlay"></span>
               <span class="rig-text">Muriel's Cakes and Cookies Logo/Website</span>
 
           </a>
-    </li>
-    <li>
-      <a class="rig-cell" href="#">
+      </div>
+      <div class="portfolio-item rig-cell graphicdesign">
+        <a href="#">
                 <img class="rig-img" src="assets\img\longstreet.png">
                 <span class="rig-overlay"></span>
                 <span class="rig-text">Longstreet Nightclub Flyer</span>
             </a>
-    </li>
+      </div>
 
-    <li>
-      <a class="rig-cell" href="#">
+      <div class="portfolio-item rig-cell graphicdesign webdesign development">
+        <a href="#">
                 <img class="rig-img" src="assets\img\caliber.png">
                 <span class="rig-overlay"></span>
                 <span class="rig-text">Caliber Coatings Website</span>
             </a>
-    </li>
-    <li>
-      <a class="rig-cell" href="#">
+      </div>
+      <div class="portfolio-item rig-cell graphicdesign videography">
+        <a href="#">
                 <img class="rig-img" src="assets\img\airplaneproject.png">
                 <span class="rig-overlay"></span>
                 <span class="rig-text">Hacking the Airplane Project</span>
 
             </a>
-    </li>
-  </ul>
+      </div>
+      </ul>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <script src="/assets/js/wingsuit.js"></script>
-  <script src="/assets/js/holder.min.js"></script>
-
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/gallery.js"></script>
 </body>
 
 </html>
