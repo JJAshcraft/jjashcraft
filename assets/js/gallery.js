@@ -2,6 +2,7 @@ $(document).ready(function() {
   var $grid = $('.grid').isotope({
     // options
     itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows'
   });
 
 
