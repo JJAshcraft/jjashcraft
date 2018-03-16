@@ -60,7 +60,9 @@ p {
   font-family: 'Bitter', serif;
   font-size: 16px;
 }
-
+.overlayHR {
+  background-color: white;
+}
 .inlineHeading {
   font-size: 24px;
   font-weight: bold;
@@ -225,8 +227,7 @@ p {
   text-transform: capitalize;
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
-  font-weight: normal !important;
+  font-family: 'Bitter', sans-serif;
   top: 40%;
   color: white;
   opacity: 0;

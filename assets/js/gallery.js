@@ -14,6 +14,7 @@ $(document).ready(function() {
     });
 
 
+
   });
 
   $('.allButtons').on('click', '.btn', function() {
