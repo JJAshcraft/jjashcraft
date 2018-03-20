@@ -1,4 +1,9 @@
+
 $(document).ready(function() {
+  $('#container').imagesLoaded( function() {
+  // images have loaded
+
+
   var $grid = $('.grid').isotope({
     // options
     itemSelector: '.portfolio-item',
@@ -24,4 +29,5 @@ $(document).ready(function() {
 
 
   // Your code
+});
 });

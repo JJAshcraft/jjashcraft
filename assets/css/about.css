@@ -65,7 +65,9 @@ p {
   font-weight: bold;
   font-family: Bitter;
 }
-
+.flyRight {
+  transform: translat3translateX(-100px);
+}
 
 .projectBoxes {
   list-style: none;
@@ -90,7 +92,7 @@ p {
 }
 
 .boxColors li:nth-child(2) {
-  background-color: #46B29D;
+  background-color: #17A2B8;
 }
 
 .boxColors li:nth-child(3) {
