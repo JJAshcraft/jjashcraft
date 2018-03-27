@@ -163,6 +163,10 @@ p {
   width: 40%;
   padding: 20px 20px 20px 0;
 }
+.projectImage {
+  max-width: 300px;
+  min-width: 100px;
+}
 .hover04 img {
 	width: 400px;
 	height: auto;
